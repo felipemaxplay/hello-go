@@ -7,6 +7,15 @@ import (
 	"github.com/felipemaxplay/hello-go/math"
 )
 
+type Pessoa struct {
+	Name string
+	Age  int
+}
+
+func (a Pessoa) aniversario() {
+	fmt.Println("Parabéns", a.Name, "hoje você completa", a.Age, "anos")
+}
+
 func main() {
 	fmt.Printf("Hello, world\n")
 
@@ -32,4 +41,11 @@ func main() {
 
 	result := math.SumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
 	fmt.Println(result)
+
+	pessoa := Pessoa{
+		Name: "Zelda",
+		Age:  33,
+	}
+
+	pessoa.aniversario()
 }
