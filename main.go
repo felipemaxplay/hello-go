@@ -24,9 +24,12 @@ func main() {
 
 	fmt.Println(resultado)
 
-	res, err := math.MultMax10(1, 11)
+	res, err := math.MultMax10(1, 10)
 	if err != nil {
 		log.Fatal(err.Error())
 	}
 	fmt.Println(res)
+
+	result := math.SumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+	fmt.Println(result)
 }
