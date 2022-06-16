@@ -3,8 +3,9 @@ package math
 import "errors"
 
 // Soma return sum of x and y
-func Soma(x int, y int) int {
-	return x + y
+func Soma(x int, y int) (res int) {
+	res = x + y
+	return
 }
 
 // MultMax10 retorna a multiplicação de x por y
