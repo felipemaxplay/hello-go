@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 
 	"github.com/felipemaxplay/hello-go/math"
 )
@@ -22,4 +23,10 @@ func main() {
 	resultado := math.Soma(1, 2)
 
 	fmt.Println(resultado)
+
+	res, err := math.MultMax10(1, 11)
+	if err != nil {
+		log.Fatal(err.Error())
+	}
+	fmt.Println(res)
 }
