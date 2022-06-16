@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/felipemaxplay/hello-go/math"
+)
 
 func main() {
 	fmt.Printf("Hello, world\n")
@@ -14,4 +18,8 @@ func main() {
 	fmt.Printf("%v -> %T\n", b, b)
 	fmt.Printf("%v -> %T\n", c, c)
 	fmt.Printf("%v -> %T\n", d, d)
+
+	resultado := math.Soma(1, 2)
+
+	fmt.Println(resultado)
 }
